@@ -11,7 +11,7 @@ Screenshot
 
 Gif
 :-------------------------
-![](https://i.imgur.com/zSQmYAM.mp4?1)
+![](https://i.imgur.com/o0QMYwO.gif)
 
 ## Install
 
