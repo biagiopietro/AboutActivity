@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final NoticesParcelable notices = new NoticesParcelable();
-        notices.addNotice(new Notice("Tap Bar Menu", "https://github.com/michaldrabik/TapBarMenu", "Copyright (C) 2015 Michal Drabik", new ApacheSoftwareLicense20()));
+        notices.addNotice(new Notice("MultiAppPicker", "https://github.com/biagiopietro/MultiAppPicker", "Copyright 2018 biagiopietro", new ApacheSoftwareLicense20()));
+        notices.addNotice(new Notice("Mc Night Mode", "https://github.com/PuffoCyano/mcnightmode", "Copyright 2018 Alessandro Marino", new ApacheSoftwareLicense20()));
         Button b = (Button) findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener()
         {
