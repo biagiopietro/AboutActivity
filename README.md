@@ -11,7 +11,7 @@ Screenshot
 
 Gif
 :-------------------------
-![](https://i.imgur.com/zSQmYAM.mp4?1) ![](https://i.imgur.com/Lst7WJZ.jpg?1) ![](https://i.imgur.com/EUEUhAf.jpg?1)
+![](https://i.imgur.com/zSQmYAM.mp4?1)
 
 ## Install
 
@@ -26,7 +26,11 @@ allprojects {
 
 Add this to your module build.gradle
 
-```
+```gradle
+    dependencies {
+            compile 'com.github.biagiopietro:AboutActivity:1.0'
+    }
+
 ```
 ### Usage
 
@@ -58,7 +62,7 @@ new AboutActivityBuilder.Builder(MainActivity.this)
 ```
 
 ### Thanks
-MultiAppPicker utilises code from these great libraries:
+AboutActivity utilises code from these great libraries:
 
 - [LicensesDialog](https://github.com/PSDev/LicensesDialog)
 
