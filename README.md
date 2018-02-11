@@ -30,7 +30,6 @@ Add this to your module build.gradle
     dependencies {
             compile 'com.github.biagiopietro:AboutActivity:1.0'
     }
-
 ```
 ### Usage
 
