@@ -28,7 +28,7 @@ Add this to your module build.gradle
 
 ```gradle
     dependencies {
-            compile 'com.github.biagiopietro:AboutActivity:1.0'
+            compile 'com.github.biagiopietro:AboutActivity:1.1'
     }
 ```
 ### Usage
