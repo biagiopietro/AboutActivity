@@ -130,10 +130,11 @@ public class AboutActivity extends AppCompatActivity
                   startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.facebookPath)));
                }
             });
+            makeVisible(imgFollowFacebook);
          }
          else
          {
-            makeVisible(imgFollowFacebook);
+            makeInvisible(imgFollowFacebook);
          }
          if(builder.googlePlusPath != null)
          {
@@ -145,10 +146,11 @@ public class AboutActivity extends AppCompatActivity
                   startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.googlePlusPath)));
                }
             });
+            makeVisible(imgFollowGoogle);
          }
          else
          {
-            makeVisible(imgFollowGoogle);
+            makeInvisible(imgFollowGoogle);
          }
          if(builder.telegramPath != null)
          {
@@ -160,10 +162,11 @@ public class AboutActivity extends AppCompatActivity
                   startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.telegramPath)));
                }
             });
+            makeVisible(imgFollowTelegram);
          }
          else
          {
-            makeVisible(imgFollowGoogle);
+            makeInvisible(imgFollowTelegram);
          }
       }
 
@@ -299,6 +302,11 @@ public class AboutActivity extends AppCompatActivity
    private void makeVisible(ImageView imageView)
    {
       imageView.setVisibility(View.VISIBLE);
+   }
+
+   private void makeInvisible(ImageView imageView)
+   {
+      imageView.setVisibility(View.GONE);
    }
 
    private void initCard()
