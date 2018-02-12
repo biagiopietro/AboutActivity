@@ -65,6 +65,8 @@ AboutActivity utilises code from these great libraries:
 
 - [LicensesDialog](https://github.com/PSDev/LicensesDialog)
 
+Thanks to [Alessandro Marino](https://github.com/PuffoCyano) his help.
+
 
 ## License
 
