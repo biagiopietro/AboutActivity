@@ -35,17 +35,17 @@ public class AboutActivityBuilder
         protected boolean showAppVersion = false;
         protected String textLabel = null;
         protected String version = null;
-        /* Rate app section*/
+        /* Rate app section */
         protected boolean showRateApp = false;
         protected String packageName;
         protected String textLabelRateThisApp;
-        /* Follow on social section*/
+        /* Follow on social section */
         protected boolean showFollowOnSocial = false;
         protected String textFollowUsOn;
         protected String facebookPath;
         protected String googlePlusPath;
         protected String telegramPath;
-        /* General section*/
+        /* General section */
         protected boolean showGeneral = false;
         protected String textApplicationName;
         protected String textDeveloper;
@@ -53,11 +53,14 @@ public class AboutActivityBuilder
         protected String textTitleChooserShare;
         protected int companyLogo;
         protected int appLogo;
-        /* Contact us on email*/
+        /* Contact us on email */
         protected boolean showContactUsOnEmail = false;
         protected String emailAddress;
         protected String textContactUsOnEmail;
         protected String textSendAMail;
+
+        /* Theme */
+        protected int idTheme = 0;
 
         /**/
 
@@ -97,6 +100,16 @@ public class AboutActivityBuilder
             return this;
         }
 
+        /**
+         * Set the theme
+         * @param idTheme
+         * @return this builder
+         */
+        public Builder setIdTheme(int idTheme)
+        {
+            this.idTheme = idTheme;
+            return this;
+        }
         /**
          *
          * @param showLicense true = show card, otherwise the card will be invisible
@@ -224,8 +237,6 @@ public class AboutActivityBuilder
             }
             Intent intent = new Intent(acc, AboutActivity.class);
             intent.putExtra("builder", (Serializable) this);
-
-
             if (frag != null)
             {
                 frag.startActivity(intent);

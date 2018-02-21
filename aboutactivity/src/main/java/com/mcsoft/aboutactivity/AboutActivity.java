@@ -2,6 +2,8 @@ package com.mcsoft.aboutactivity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -35,6 +37,7 @@ public class AboutActivity extends AppCompatActivity
    private CardView cardRecommendedApps, cardAppVersion, cardLicense, cardRateApp, cardFollowOnSocial, cardGeneral, cardContactUsOnEmail;
    public static ImageView imgLogoApp, imgCompanyLogo, imgFollowFacebook, imgFollowGoogle, imgFollowTelegram;
    private AboutActivityBuilder.Builder builder;
+   private NightModeHelper mNightModeHelper;
    private List<Notice> list;
    @Override
    protected void onCreate(Bundle savedInstanceState)
@@ -47,6 +50,10 @@ public class AboutActivity extends AppCompatActivity
          return;
       }
       builder = (AboutActivityBuilder.Builder) intent.getSerializableExtra("builder");
+      if (builder.idTheme != 0)
+      {
+         setTheme(builder.idTheme);
+      }
       setContentView(R.layout.layout_about_activity);
       setupActionBar();
 
@@ -77,6 +84,7 @@ public class AboutActivity extends AppCompatActivity
 
       // make invisible all cards
       initCard();
+
       if(builder.showAppVersion == true)
       {
          makeVisible(cardAppVersion);

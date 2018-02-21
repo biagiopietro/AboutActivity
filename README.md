@@ -28,7 +28,7 @@ Add this to your module build.gradle
 
 ```gradle
     dependencies {
-            compile 'com.github.biagiopietro:AboutActivity:1.1'
+            compile 'com.github.biagiopietro:AboutActivity:1.2'
     }
 ```
 ### Usage
@@ -54,6 +54,7 @@ new AboutActivityBuilder.Builder(MainActivity.this)
                         .showRecommendedApps(true, marketDevPageLink, "Recommended by") // Optional - default: false
                         .setAppLogo(R.drawable.logo_mc_soft)
                         .setCompanyLogo(R.drawable.logo_mc_soft)
+                        .setIdTheme(0) // Optional - default: 0
                         .showRateApp(true, getPackageName(), "Rate our app") // Optional - default: false
                         .showGeneral(true, getString(R.string.app_name), getPackageName(), "Developed by MC SOFT", "Thank you so much for downloading our application", "Share with") // Optional - default: false
                         .showContactUsOnEmail(true, "marinocapecemc@gmail.com", "For any information contact us", "Send a mail..")
