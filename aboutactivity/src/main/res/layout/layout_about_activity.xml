@@ -42,7 +42,7 @@
                     android:gravity="center"
                     android:textSize="30sp"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:textStyle="bold"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -60,21 +60,18 @@
                             android:id="@+id/lblDeveloper"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorPrimaryDark"
                             android:textSize="18sp"/>
                         <TextView
                             android:id="@+id/lblThanks"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:textColor="@color/colorPrimaryDark"
                             android:textSize="18sp"/>
                     </LinearLayout>
                     <android.support.design.widget.FloatingActionButton
                         android:id="@+id/fabShare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:backgroundTint="@color/colorPrimaryDark"
                         app:srcCompat="@drawable/ic_share_black_24dp"
                         app:tint="@color/White"
                         app:elevation="10dp"/>
@@ -109,7 +106,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:textColor="@color/Black"
                     android:textSize="18sp"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -144,7 +140,6 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:textColor="@color/Black"
                     android:textSize="16sp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -176,7 +171,6 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textColor="@color/Black"
                     android:textSize="16sp"/>
             </LinearLayout>
 
@@ -203,7 +197,6 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_marginTop="5dp"
-                    android:textColor="@color/Black"
                     android:textSize="18sp"/>
                 <android.support.v7.widget.AppCompatRatingBar
                     android:id="@+id/ratingBar"
@@ -238,7 +231,6 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_marginTop="5dp"
-                    android:textColor="@color/Black"
                     android:textSize="18sp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -295,7 +287,6 @@
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@id/fabContact"
                     android:gravity="center"
-                    android:textColor="@color/Black"
                     android:textSize="17sp" />
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/fabContact"
@@ -304,7 +295,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/fab_margin"
                     android:layout_gravity="center"
-                    app:backgroundTint="@color/colorPrimary"
                     app:srcCompat="@drawable/ic_email_black_24dp"
                     app:tint="@color/White"
                     app:elevation="10dp"/>

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
                         .showRecommendedApps(true, marketDevPageLink, "Recommended by") // Optional - default: false
                         .setAppLogo(R.drawable.logo_mc_soft)
                         .setCompanyLogo(R.drawable.logo_mc_soft)
-                        .setIdTheme(0) // Optional - default: 0
+                        .setIdTheme(0) // Optional - default: 0 (eg. R.style.mystyle)
                         .showRateApp(true, getPackageName(), "Rate our app") // Optional - default: false
                         .showGeneral(true, getString(R.string.app_name), getPackageName(), "Developed by MC SOFT", "Thank you so much for downloading our application", "Share with") // Optional - default: false
                         .showContactUsOnEmail(true, "marinocapecemc@gmail.com", "For any information contact us", "Send a mail..")

@@ -339,7 +339,6 @@ public class AboutActivity extends AppCompatActivity
          window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
          // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
          window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-         window.setStatusBarColor(ContextCompat.getColor(this,R.color.colorPrimaryDark));
       }
       ActionBar actionBar = getSupportActionBar();
       if (actionBar != null)
